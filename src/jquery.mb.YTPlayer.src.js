@@ -338,7 +338,7 @@ let getYTPVideoID = function (url) {
 				if (!ytp.YTAPIReady && typeof window.YT === 'undefined') {
 					jQuery('#YTAPI').remove();
 					let tag = jQuery('<script>').attr({
-						'src'  : '//www.youtube.com/iframe_api?v=' + jQuery.mbYTPlayer.version,
+						'data-cookieblock-src'  : '//www.youtube.com/iframe_api?v=' + jQuery.mbYTPlayer.version,
 						'id'   : 'YTAPI',
 						'async': 'async',
 						'defer': true
